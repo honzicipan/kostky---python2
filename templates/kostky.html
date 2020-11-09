@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hra Kostky</h1>
+    <p>Padlo ti: {{hod}}</p>
+    <img src="/static/{{hod}}.jpg" height="300px" width="300px">
+    <br>
+    <p>Padlo botovi: {{bhod}}</p>
+    <img src="/static/{{bhod}}.jpg" height="300px" width="300px">
+    <br>
+    <button onClick="window.location.reload();">ZNOVU</button>
+    <br>
+    <table>
+        <tr>
+            <th>hrac</th>
+            <th>bot</th>
+        </tr>
+        <tr>
+            <td>{{vysledek[0]}}</td>
+            <td>{{vysledek[1]}}</td>
+        </tr>
+    </table>
+</body>
+
+</html>
